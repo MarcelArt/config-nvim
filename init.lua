@@ -1,6 +1,11 @@
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
 vim.g.mapleader = " "
 
+vim.o.guifont = "IosevkaTerm Nerd Font"
+vim.g.neovide_opacity = 0.95
+vim.g.neovide_normal_opacity = 0.95
+vim.g.neovide_cursor_vfx_mode = "railgun"
+
 -- bootstrap lazy and all plugins
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
 
@@ -35,3 +40,9 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+-- Set Git Bash as the default terminal 
+vim.opt.shell = "C:\\Program Files\\Git\\bin\\bash.exe" 
+vim.opt.shellcmdflag = "-c" 
+vim.opt.shellquote = "" 
+vim.opt.shellxquote = ""
