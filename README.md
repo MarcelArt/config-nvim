@@ -1,9 +1,8 @@
-**This repo is supposed to used as config by NvChad users!**
-
-- The main nvchad repo (NvChad/NvChad) is used as a plugin by this repo.
-- So you just import its modules , like `require "nvchad.options" , require "nvchad.mappings"`
-- So you can delete the .git from this repo ( when you clone it locally ) or fork it :)
-
-# Credits
-
-1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's . It made a lot of things easier!
+1. Install nvim
+```sh
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+sudo rm -rf /opt/nvim
+sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
+```
+2. Add nvim to path in `.bashrc` file `export PATH="$PATH:/opt/nvim-linux-x86_64/bin"`
+3. Clone config-nvim `git clone https://github.com/MarcelArt/config-nvim.git ~/.config/nvim && nvim`
